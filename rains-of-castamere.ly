@@ -13,13 +13,12 @@
     % }
 }
 
+\paper {
+    #(set-paper-size "a5")
+}
 
 global = {
     \time 4/4
-}
-
-\paper {
-    #(set-paper-size "a5")
 }
 
 \score {
