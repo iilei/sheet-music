@@ -58,6 +58,7 @@ global = {
       % tenuto => -- => strich über notenkpf / Artikulationszeichen
       c4.(c8--) c[( d)] b[( a)] |
       b2 b8[( c)] a[( g)] |
-      a4.( a8--) a8[( b)] g8[( f)] 
+      a4.( a8--) a8[( b)] g8[( f)]
+       % ende der fünften reihe
     }
 }
