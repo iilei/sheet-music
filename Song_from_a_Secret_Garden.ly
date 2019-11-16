@@ -76,8 +76,7 @@ global = {
 
       d8[( e)] c[( b)] c4. b8 \upbow |
       c2 \downbow r2 \bar "||"  |
-      R1*7
-
+      R1*7 
 
     }
 }
