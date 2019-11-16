@@ -25,7 +25,7 @@ global = {
 
      R1 |
      R1*3 |
-     s8 r8 g8\downbow s8 c8\upbow(d8)
+     r4 s8 r8 g8\downbow s8 c8\upbow(d8) |
    
     }
 }
