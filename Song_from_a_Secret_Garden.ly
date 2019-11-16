@@ -2,7 +2,6 @@
 
 \header {
   title = "Song from a Secret Garden"
-  composer = "Secret Garden"
 }
 
 \paper {
