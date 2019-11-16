@@ -25,7 +25,7 @@ global = {
 
      R1 |
      R1*3 |
-     r2 r8 g\downbow c\upbow(d) |
+     r2 r8 g\downbow c[\upbow(d)] |
    
     }
 }
