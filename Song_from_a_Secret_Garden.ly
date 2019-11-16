@@ -35,19 +35,18 @@ global = {
      % oder simple Textartige Zeichen (http://lilypond.org/doc/v2.18/Documentation/notation/writing-text#text-marks) 
      % angemessen?
      \mark \markup { \teeny C } e4.( d8) \mark \markup { \teeny F }  e2 |
-     \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall  |
+     \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall |
+      % ende der ersten reihe
 
       d8[(\mark \markup { \teeny AS }  e8)] c8[( b8)] \mark \markup { \teeny I } c4. b8 |
       g2 r8 g8 c8[( d8)] |
       e4.( f8) e2 |
       e8[( f8)] d8[( c8)] d2\prall 
-
       % ende der zweiten reihe
 
       d8[(e8)] c8[( b8)] c4. b8 |
       c2 r8 d,\downbow e[(b')] |
       c4.( c8) c8( d8) b[( a)]
-
        % ende der dritten reihe
    
     }
