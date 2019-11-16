@@ -29,7 +29,7 @@ global = {
      R1 |
      R1*3 |
      r2 r8 g\downbow c[\upbow(d)] |
-     % Frage; ist in der handschriftichen assung ein "C" über dem Notenkopf? Dann ein "F" und "B" ?
+     % Frage; ist in der handschriftichen Fassung ein "C" über dem Notenkopf? Dann ein "F" und "B" ?
      % sind dafür ausdruckelemente (http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes)
      % oder simple Textartige Zeichen (http://lilypond.org/doc/v2.18/Documentation/notation/writing-text#text-marks) 
      % angemessen?
