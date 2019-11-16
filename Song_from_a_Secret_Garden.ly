@@ -60,5 +60,10 @@ global = {
       b2 b8[( c)] a[( g)] |
       a4.( a8--) a8[( b)] g8[( f)]
        % ende der fünften reihe
+
+      g2 r8 g8 c[( d)] |
+      e4.( d8) e2 |
+      e8[(f )] d[( c)] c2\prall
+
     }
 }
