@@ -2,6 +2,9 @@
 
 \header {
   title = "Song from a Secret Garden"
+  composer = "Rolf Løvland"
+  copyright = "Thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
+  % tagline = ""
 }
 
 \paper {
