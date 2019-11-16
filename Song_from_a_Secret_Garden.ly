@@ -43,6 +43,12 @@ global = {
       e8[( f8)] d8[( c8)] d2\prall 
 
       % ende der zweiten reihe
+
+      d8[(e8)] c8[( b8)] c4. b8 |
+      c2 r8 d,\downbow e[(b')] |
+      c4.( c8) c8( d8) b[( a)]
+
+       % ende der dritten reihe
    
     }
 }
