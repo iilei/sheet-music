@@ -35,6 +35,7 @@ global = {
      % angemessen?
      e4.( d8) e2 |
      e8[( f8)] c8[( b8)] d2\prall |
+     d8[( e8)] c8[( b8)] c4. b8 |
    
     }
 }
