@@ -15,6 +15,7 @@ global = {
 \score {
   \new StaffGroup \relative a' \repeat volta 1 {
     \set Staff.instrumentName = #"Violin 1"
+
     % "b" Symbole auf Notenlinen => Ton wird eine halbe Note tiefer gespielt
     \set Staff.keySignature = #`(((0 . 6) . ,FLAT)
                                ((0 . 9) . ,FLAT)
@@ -33,9 +34,12 @@ global = {
      % sind dafür ausdruckelemente (http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes)
      % oder simple Textartige Zeichen (http://lilypond.org/doc/v2.18/Documentation/notation/writing-text#text-marks) 
      % angemessen?
-     e4.( d8) e2 |
-     e8[( f8)] c8[( b8)] d2\prall |
+     \mark \markup { \teeny C } e4.( d8) \mark \markup { \teeny F }  e2 |
+     \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall  |
+
      d8[( e8)] c8[( b8)] c4. b8 |
+     
+     c2 r8 d, e8[( g8)]
    
     }
 }
