@@ -37,7 +37,7 @@ global = {
      \mark \markup { \teeny C } e4.( d8) \mark \markup { \teeny F }  e2 |
      \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall  |
 
-     d8[( e8)] c8[( b8)] c4. b8 |
+       d8[(\mark \markup { \teeny AS }  e8)] c8[( b8)] \mark \markup { \teeny I } c4. b8 |
      
      c2 r8 d, e8[( g8)]
    
