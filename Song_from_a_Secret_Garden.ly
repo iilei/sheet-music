@@ -5,11 +5,11 @@
   title = "Song from a Secret Garden"
   composer = "Rolf Løvland"
   copyright = "Thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
-  tagline = "Contributions appreciated -> https://github.com/iilei/sheet-music"
+  tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music" 
 }
 
 \paper {
-    #(set-paper-size "a4")
+    #(set-paper-size "a5")
 }
 
 global = {
@@ -18,7 +18,7 @@ global = {
 
 
 \score {
-  \new StaffGroup \relative a' \repeat volta 1 {
+  \new StaffGroup \relative a' {
     \set Staff.instrumentName = #"Violin 1"
     \override Glissando.style = #'trill
 
