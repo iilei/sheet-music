@@ -1,10 +1,11 @@
 \version "2.18.2"
+% https://www.hacklily.org/?edit=iilei/sheet-music/Song_from_a_Secret_Garden.ly
 
 \header {
   title = "Song from a Secret Garden"
   composer = "Rolf Løvland"
   copyright = "Thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
-  % tagline = ""
+  tagline = "Contributions appreciated -> https://github.com/iilei/sheet-music"
 }
 
 \paper {
