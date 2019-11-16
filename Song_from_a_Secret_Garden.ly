@@ -63,7 +63,11 @@ global = {
 
       g2 r8 g8 c[( d)] |
       e4.( d8) e2 |
-      e8[(f )] d[( c)] c2\prall
+      e8[(f )] d[( c)] d2\prall
+      % ende der sechsten reihe
+
+      d8[(e)] c[(b)] c4. b8 |
+      g2 r8 g,8 c8[( d)]
 
     }
 }
