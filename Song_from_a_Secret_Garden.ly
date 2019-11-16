@@ -12,9 +12,11 @@ global = {
     \time 4/4
 }
 
+
 \score {
   \new StaffGroup \relative a' \repeat volta 1 {
     \set Staff.instrumentName = #"Violin 1"
+    \override Glissando.style = #'trill
 
     % "b" Symbole auf Notenlinen => Ton wird eine halbe Note tiefer gespielt
     \set Staff.keySignature = #`(((0 . 6) . ,FLAT)
@@ -69,9 +71,7 @@ global = {
       d8[(e)] c[(b)] c4. b8 |
       g2 r8 g,8 c8[( d)]
       e4.( d8) e2 |
-      e8[( f)] d[( c)] e2\prall
-
-
+      e8[( f)] d[( c)] e2\prall % "Prall" unter dem Notenkopf möglich?
 
     }
 }
