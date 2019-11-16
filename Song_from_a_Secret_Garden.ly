@@ -57,6 +57,7 @@ global = {
       % http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes
       % tenuto => -- => strich über notenkpf / Artikulationszeichen
       c4.(c8--) c[( d)] b[( a)] |
-      b2 b8[( c)] a[( g)] | 
+      b2 b8[( c)] a[( g)] |
+      a4.( a8--) a8[( b)] g8[( f)] 
     }
 }
