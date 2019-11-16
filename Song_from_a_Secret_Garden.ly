@@ -68,7 +68,9 @@ global = {
 
       d8[(e)] c[(b)] c4. b8 |
       g2 r8 g,8 c8[( d)]
-      e4.( d8) e2
+      e4.( d8) e2 |
+      e8[( f)] d[( c)] e2\prall
+
 
 
     }
