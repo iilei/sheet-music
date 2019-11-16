@@ -48,6 +48,10 @@ global = {
       c2 r8 d,\downbow e[(b')] |
       c4.( c8) c8( d8) b[( a)]
        % ende der dritten reihe
-   
+ 
+      b2\prall r8 d, e[( g)]
+      a4.( a8) a8[( b8)] g8[( f8)]
+       % ende der vierten reihe
+
     }
 }
