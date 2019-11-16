@@ -5,7 +5,7 @@
 }
 
 \paper {
-    #(set-paper-size "a5")
+    #(set-paper-size "a4")
 }
 
 global = {
@@ -26,6 +26,8 @@ global = {
      R1 |
      R1*3 |
      r2 r8 g\downbow c[\upbow(d)] |
+     e4.( d8) e2 |
+     e8[( f8)] c8[( bes8)]
    
     }
 }
