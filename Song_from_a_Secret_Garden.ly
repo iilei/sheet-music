@@ -51,7 +51,12 @@ global = {
  
       b2\prall r8 d, e[( g)]
       a4.( a8) a8[( b8)] g8[( f8)]
+      g2 r8 d8 e[( b')]
        % ende der vierten reihe
 
+      % http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes
+      % tenuto => -- => strich über notenkpf / Artikulationszeichen
+      c4.(c8--) c[( d)] b[( a)] |
+      b2 b8[( c)] a[( g)] | 
     }
 }
