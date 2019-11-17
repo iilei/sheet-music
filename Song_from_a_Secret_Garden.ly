@@ -4,7 +4,7 @@
 \header {
   title = "Song from a Secret Garden"
   composer = "Rolf Løvland"
-  copyright = "Thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
+  copyright = "Many thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
   tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music" 
 }
 
