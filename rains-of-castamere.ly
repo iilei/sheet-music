@@ -50,12 +50,22 @@ global = {
 
         e'[ f] d2 f4 |
         f8[e] s8  a,4. s8 a8 |
-        
+
         e'[f] d2 f4 |
         f4 e2 a,4 |
-        e'8[ f8] d2 a'4
-        
-        
+
+        e'8[ f8] d2 a'4 |
+        a g d4. e8 |
+        f4. d8 e4. c8 |
+        d2. a4 |
+
+        e'8[ f8] d2 a'4 |
+        a4 g d4. e8 |
+
+        f4. d8 b'[ a] e[ f] |
+
+        d1
+        \bar "||"
     }
 }
 
