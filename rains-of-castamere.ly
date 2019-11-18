@@ -13,12 +13,13 @@
     % }
 }
 
-\paper {fonts = #
-        (make-pango-font-tree
-         "Century Schoolbook L"
-         "Century Schoolbook L"
-         "Century Schoolbook L"
-         (/ (* staff-height pt) 2.5))
+\paper {
+    fonts = #
+    (make-pango-font-tree
+     "Century Schoolbook L"
+     "Century Schoolbook L"
+     "Century Schoolbook L"
+     (/ (* staff-height pt) 2.5))
 
     #(set-paper-size "a5")
 }
@@ -43,11 +44,18 @@ global = {
         a8[\upbow a8] ~ a8[ b8] g4 c,8[ c8] |
         a'4 b4 g4. c,8 |
         b'4 a4 g4  f4 |
-        e2. r8 a,8
+        e2. r8 a,8 |
         \set Score.repeatCommands = #'(end-repeat)
         \break
 
-        e'[ f]( c)[ f]
+        e'[ f] d2 f4 |
+        f8[e] s8  a,4. s8 a8 |
+        
+        e'[f] d2 f4 |
+        f4 e2 a,4 |
+        e'8[ f8] d2 a'4
+        
+        
     }
 }
 
