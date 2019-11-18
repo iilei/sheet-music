@@ -8,7 +8,13 @@
   tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music" 
 }
 
-\paper {
+\paper {fonts = #
+        (make-pango-font-tree
+         "Century Schoolbook L"
+         "Century Schoolbook L"
+         "Century Schoolbook L"
+         (/ (* staff-height pt) 2.5))
+
     #(set-paper-size "a5")
 }
 
