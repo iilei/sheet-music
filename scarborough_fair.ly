@@ -56,6 +56,17 @@
 
         \break
 
+        b a f |
+        f2. |
+        a'2 a4 |
+        e'2 e4 |
+        \stemUp
+        b4. c8  b4 |
+        
+        \stemNeutral
+        \break
+        
+
 
 
 
