@@ -48,6 +48,17 @@
         a2 a4 |
         \break
 
+        g2 e4 |
+        e d c |
+        b g2 |
+        a2 e'4 |
+        d2 c4 |
+
+        \break
+
+
+
+
         \bar "||"
 
     }
