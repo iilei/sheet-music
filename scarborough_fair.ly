@@ -39,10 +39,15 @@
         b4. c8 b4 |
         a2.( a2.) |
         \break
+        
         \skip4 e'4  g4 |
+        a2 g4 |
+        
+        e4 \mark \markup { \teeny "e moll" }  \bar "||" f d |
+        e2.( e2) a4 |
         a2 a4 |
-        e'2 e4 |
-        b4. c8 b4 |
+        \break
+
 
 
 
