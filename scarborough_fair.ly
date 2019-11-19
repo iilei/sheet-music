@@ -32,7 +32,7 @@
         \numericTimeSignature
         \override MultiMeasureRest.expand-limit = #2
         \override MultiMeasureRest.staff-position = #2
-        \omit Accidental  % omit natural marks (Auflösungszeichen) - alternativ: b8 -> bes8
+        % \omit Accidental  % omit natural marks (Auflösungszeichen) - alternativ: b8 -> bes8
 
         a,2 \mark \markup { \teeny "a moll" } a4 |
         e'2 e4 |
@@ -43,7 +43,9 @@
         \skip4 e'4  g4 |
         a2 g4 |
 
-        e4 \mark \markup { \teeny "e moll" }  \bar "||" f d |
+        e4 \mark \markup { \teeny "e moll" }  \bar "||"
+        \relative e,
+        f'' d |
         e2.( e2) a4 |
         a2 a4 |
         \break
@@ -65,7 +67,12 @@
         
         \stemNeutral
         \break
-        
+             
+
+        a2.( a2.) |
+        r4 e'4 g |
+        a2 g4 |
+        e fis
 
 
 
