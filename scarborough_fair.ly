@@ -21,7 +21,12 @@
      "Century Schoolbook L"
      (/ (* staff-height pt) 2.5))
 
-    #(set-paper-size "a5")
+    #(set-paper-size "a4")
+}
+
+\layout {
+  ragged-right = ##t
+  ragged-last = ##t
 }
 
 \score {
@@ -86,10 +91,13 @@
 
         \break
 
+        a2 e'4 |
+        d2 c4 |
+        \stemUp
+        b a g |
+        \stemNeutral
 
-
-
-        \bar "||"
+        a2. \bar "||"
 
     }
 }
