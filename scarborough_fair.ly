@@ -72,7 +72,19 @@
         a2.( a2.) |
         r4 e'4 g |
         a2 g4 |
-        e fis
+        e fis d |
+
+        \break
+
+        e2.( e2) a4 |
+        a2 a4 |
+        g2 e4 |
+        e d c |
+        \stemUp
+        b g2
+        \stemNeutral
+
+        \break
 
 
 
