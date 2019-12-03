@@ -52,7 +52,7 @@ global = {
 
       d8[(\mark \markup { \teeny AS }  e8)] c8[( b8)] \mark \markup { \teeny I } c4. b8 |
       g2 r8 g8 c8[( d8)] |
-      e4.( f8) e2 |
+      e4.( d8) e2 |
       e8[( f8)] d8[( c8)] d2\prall 
       % ende der zweiten reihe
 
