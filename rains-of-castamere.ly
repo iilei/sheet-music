@@ -31,7 +31,7 @@
      "Century Schoolbook L"
      (/ (* staff-height pt) 2.5))
 
-    #(set-paper-size "a5")
+    #(set-paper-size "a4")
     
 }
 
