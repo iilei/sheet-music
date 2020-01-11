@@ -1,8 +1,16 @@
 \version "2.18.2"
 
+#(define (override-color-for-all-grobs color)
+  (lambda (context)
+   (let loop ((x all-grob-descriptions))
+    (if (not (null? x))
+     (let ((grob-name (caar x)))
+      (ly:context-pushpop-property context grob-name 'color color)
+      (loop (cdr x)))))))
+
 
 \header {
-    title = "Rains of Castamere"
+    title =  \markup \with-color #blue "Rains of Castamere"
     subsubtitle = ""
     tagline = ""
     % tagline = \markup {
@@ -13,7 +21,9 @@
     % }
 }
 
+
 \paper {
+
     fonts = #
     (make-pango-font-tree
      "Century Schoolbook L"
@@ -22,14 +32,18 @@
      (/ (* staff-height pt) 2.5))
 
     #(set-paper-size "a5")
+    
 }
 
 global = {
     \time 4/4
+    
 }
 
 \score {
-    \new StaffGroup \relative a' \repeat volta 1 {
+
+    \new StaffGroup \relative a' \repeat volta 1  {
+    \applyContext #(override-color-for-all-grobs (x11-color 'blue))
         \numericTimeSignature
         \key f \major
 
