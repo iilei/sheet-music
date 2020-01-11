@@ -41,7 +41,6 @@ global = {
 }
 
 \score {
-
     \new StaffGroup \relative a' \repeat volta 1  {
         \override Score.Script.font-size = #1
         \override Score.BarNumber.color = #(x11-color 'DarkBlue)
@@ -50,8 +49,8 @@ global = {
         \key f \major
        
 
-        r8 s4 s2 a8-0 |
-        f'4.-1 a,8 e'4. a,8 |
+        r8 s4 s2 a8-0 ^\markup { a } |
+        f'4.-1 ^\markup { e } a,8 e'4. a,8 |
         f'4 g4 e4. a,8 |
         g'4 f4 e4 d4 |
         e1 |
