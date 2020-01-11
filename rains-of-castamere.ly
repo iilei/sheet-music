@@ -43,7 +43,8 @@ global = {
 \score {
 
     \new StaffGroup \relative a' \repeat volta 1  {
-    \applyContext #(override-color-for-all-grobs (x11-color 'blue))
+        \override Score.BarNumber.color = #blue
+        \applyContext #(override-color-for-all-grobs (x11-color 'blue))
         \numericTimeSignature
         \key f \major
 
