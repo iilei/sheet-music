@@ -16,9 +16,9 @@
 \paper {
     fonts = #
     (make-pango-font-tree
-     "Century Schoolbook L"
-     "Century Schoolbook L"
-     "Century Schoolbook L"
+     "CenturySchoolSB-Roman Regular"
+     "CenturySchoolSB-Roman Regular"
+     "CenturySchoolSB-Roman Regular"
      (/ (* staff-height pt) 2.5))
 
     #(set-paper-size "a5")
