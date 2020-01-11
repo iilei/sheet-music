@@ -37,7 +37,6 @@
 
 global = {
     \time 4/4
-    
 }
 
 \score {
@@ -49,16 +48,15 @@ global = {
         \key f \major
        
 
-        r8 s4 s2 a8-0 ^\markup { a } |
-        f'4.-1 ^\markup { e } a,8 e'4. a,8 |
+        r8 s4 s2 a8-0 ^\markup \tiny \circle  { a } | %  \upbow
+        f'4.-1 ^\markup \tiny \circle  { e } a,8 e'4.-0 ^\markup \tiny \circle { e } a,8 |
         f'4 g4 e4. a,8 |
         g'4 f4 e4 d4 |
         e1 |
         \break
 
         \omit Accidental % omit natural marks (Auflösungszeichen)
-        % \downbow \upbow
-        a8[ a8] ~ a8[ b8] g4 c,8[ c8] |
+        a8-3 ^\markup \tiny \circle  { e } [ a8] ~ a8[ b8] g4  c,8-2 ^\markup \tiny \circle  { a }[ c8] |
         a'4 b4 g4. c,8 |
         b'4 a4 g4  f4 |
         e2. r8 a,8 |
