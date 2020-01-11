@@ -10,7 +10,7 @@
 
 
 \header {
-    title =  \markup \with-color #blue "Rains of Castamere"
+    title =  \markup \with-color #(x11-color 'DarkBlue) "Rains of Castamere"
     subsubtitle = ""
     tagline = ""
     % tagline = \markup {
@@ -43,8 +43,8 @@ global = {
 \score {
 
     \new StaffGroup \relative a' \repeat volta 1  {
-        \override Score.BarNumber.color = #blue
-        \applyContext #(override-color-for-all-grobs (x11-color 'blue))
+        \override Score.BarNumber.color = #(x11-color 'DarkBlue)
+        \applyContext #(override-color-for-all-grobs (x11-color 'DarkBlue))
         \numericTimeSignature
         \key f \major
 
