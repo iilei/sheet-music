@@ -41,6 +41,8 @@ global = {
 
 \score {
     \new StaffGroup \relative a' \repeat volta 1  {
+
+
     \new Staff  {
         \override Score.Script.font-size = #1
         % \override Stem #'thickness =  #'(0.2 . 0.2)
