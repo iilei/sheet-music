@@ -42,6 +42,8 @@ global = {
 \score {
     \new StaffGroup \relative a' \repeat volta 1   {
         \override Score.Script.font-size = #1
+        % \override Stem #'thickness =  #'(0.2 . 0.2)
+        \override Score.StaffSymbol #'ledger-line-thickness = #'(0 . 0.1)
         \override Score.BarNumber.color = #(x11-color 'DarkBlue)
         \applyContext #(override-color-for-all-grobs (x11-color 'DarkBlue))
         \numericTimeSignature
