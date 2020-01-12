@@ -40,7 +40,8 @@ global = {
 }
 
 \score {
-    \new StaffGroup \relative a' \repeat volta 1   {
+    \new StaffGroup \relative a' \repeat volta 1  {
+    \new Staff  {
         \override Score.Script.font-size = #1
         % \override Stem #'thickness =  #'(0.2 . 0.2)
         \override Score.StaffSymbol #'ledger-line-thickness = #'(0 . 0.1)
@@ -48,6 +49,7 @@ global = {
         \applyContext #(override-color-for-all-grobs (x11-color 'DarkBlue))
         \numericTimeSignature
         \key f \major
+        
        
 
         r8 s4 s2 a8-0 ^\markup \tiny \circle  { a }  | %  \upbow
@@ -84,6 +86,11 @@ global = {
 
         d1
         \bar "||"
+
     }
+   
+    }
+    
+    
 }
 
