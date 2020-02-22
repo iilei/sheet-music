@@ -32,7 +32,7 @@
      (/ (* staff-height pt) 2.5))
 
     #(set-paper-size "a5")
-    
+
 }
 
 global = {
@@ -51,12 +51,12 @@ global = {
         \applyContext #(override-color-for-all-grobs (x11-color 'DarkBlue))
         \numericTimeSignature
         \key f \major
-        
-       
 
-        r8 s4 s2 (a8| % 
 
-        f'4.) a,8 e'4. a,8 |
+
+        r8 s4 s2 a8( | %
+
+        f'4.) a,8 (e'4.) a,8 |
         f'4 g4 e4. a,8 |
         g'4 f4 e4 d4 |
         e1 |
@@ -84,14 +84,11 @@ global = {
         e'8[ f8] d2 a'4 |
         a4 g d4. e8 |
 
-        f4. d8 b'[ a] e[ f] |
+        f4. d8 a'8[ g8] e8[ f8] |
 
         d1
         \bar "||"
     }
-   
-    }
-    
-    
-}
 
+    }
+}
