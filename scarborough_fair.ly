@@ -43,17 +43,17 @@
         e'2 e4 |
         b4. c8 b4 |
         a2.( a2.) |
-        % \break
+        \break
 
-        \skip4 e'4  g4 |
+        r4 e'4  g4 |
         a2 g4 |
 
-        e4 \mark \markup { \teeny "e moll" }  \bar "||"
+        e4 \mark \markup { \teeny "e moll" }  
         \relative e,
-        f'' d |
+        fis'' d |
         e2.( e2) a4 |
         a2 a4 |
-        % \break
+         \break
 
         g2 e4 |
         e d c |
@@ -61,7 +61,7 @@
         a2 e'4 |
         d2 c4 |
 
-        % \break
+       \break
 
         b a g |
         a2. |
@@ -71,7 +71,7 @@
         b4. c8  b4 |
 
         \stemNeutral
-        % \break
+        \break
 
 
         a2.( a2.) |
@@ -79,7 +79,7 @@
         a2 g4 |
         e fis d |
 
-        % \break
+        \break
 
         e2.( e2) a4 |
         a2 a4 |
@@ -89,7 +89,7 @@
         b g2
         \stemNeutral
 
-        % \break
+        \break
 
         a2 e'4 |
         d2 c4 |
