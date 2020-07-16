@@ -17,10 +17,15 @@
 }
 
 \score {
+    % \midi {
+    %    \tempo 4 = 88
+    % }
     \new StaffGroup \relative a' \repeat volta 1 {
+
         \set Staff.instrumentName = #"Violin 1"
         \time 3/4
         \numericTimeSignature
+        \tempo "Andante"
 
         a,2 \mark \markup { \teeny "a moll" } a4 |
         e'2 e4 |
