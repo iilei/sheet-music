@@ -1,21 +1,22 @@
-\version "2.18.2"
+\version "2.20.0"
 % https://www.hacklily.org/?edit=iilei/sheet-music/Song_from_a_Secret_Garden.ly
 
 \header {
-  title = "Song from a Secret Garden"
-  composer = "Rolf Løvland"
-  copyright = "Many thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
-  tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music" 
+    title = "Song from a Secret Garden"
+    composer = "Rolf Løvland"
+    copyright = "Many thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
+    tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music"
 }
 
 \paper {fonts = #
-        (make-pango-font-tree
-         "Century Schoolbook L"
-         "Century Schoolbook L"
-         "Century Schoolbook L"
-         (/ (* staff-height pt) 2.5))
-
-    #(set-paper-size "a5")
+        #(set-paper-size "a5")
+        #(define fonts
+             (set-global-fonts
+              #:music "emmentaler"
+              #:brace "emmentaler"
+              #:roman "TeXGyre Schola"
+              #:sans "TeXGyre Heros"
+              ))
 }
 
 global = {
@@ -24,69 +25,69 @@ global = {
 
 
 \score {
-  \new StaffGroup \relative a' {
-    \set Staff.instrumentName = #"Violin 1"
-    \override Glissando.style = #'trill
+    \new StaffGroup \relative a' {
+        \set Staff.instrumentName = #"Violin 1"
+        \override Glissando.style = #'trill
 
-    % "b" Symbole auf Notenlinen => Ton wird eine halbe Note tiefer gespielt
-    \set Staff.keySignature = #`(((0 . 6) . ,FLAT)
-                               ((0 . 9) . ,FLAT)
-                               ((0 . 5) . ,FLAT)
-                              )
-    \compressFullBarRests
-    \numericTimeSignature
-    \override MultiMeasureRest.expand-limit = #2
-    \override MultiMeasureRest.staff-position = #2
-    \omit Accidental  % omit natural marks (Auflösungszeichen) - alternativ: b8 -> bes8
+        % "b" Symbole auf Notenlinen => Ton wird eine halbe Note tiefer gespielt
+        \set Staff.keySignature = #`(((0 . 6) . ,FLAT)
+                                     ((0 . 9) . ,FLAT)
+                                     ((0 . 5) . ,FLAT)
+                                     )
+        \compressFullBarRests
+        \numericTimeSignature
+        \override MultiMeasureRest.expand-limit = #2
+        \override MultiMeasureRest.staff-position = #2
+        \omit Accidental  % omit natural marks (Auflösungszeichen) - alternativ: b8 -> bes8
 
-     R1 |
-     R1*3 |
-     r2 r8 g\downbow c[\upbow(d)] |
-     % Frage; ist in der handschriftichen Fassung ein "C" über dem Notenkopf? Dann ein "F" und "B" ?
-     % sind dafür ausdruckelemente (http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes)
-     % oder simple Textartige Zeichen (http://lilypond.org/doc/v2.18/Documentation/notation/writing-text#text-marks) 
-     % angemessen?
-     \mark \markup { \teeny C } e4.( d8) \mark \markup { \teeny F }  e2 |
-     \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall |
-      % ende der ersten reihe
+        R1 |
+        R1*3 |
+        r2 r8 g\downbow c[\upbow(d)] |
+        % Frage; ist in der handschriftichen Fassung ein "C" über dem Notenkopf? Dann ein "F" und "B" ?
+        % sind dafür ausdruckelemente (http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes)
+        % oder simple Textartige Zeichen (http://lilypond.org/doc/v2.18/Documentation/notation/writing-text#text-marks)
+        % angemessen?
+        \mark \markup { \teeny C } e4.( d8) \mark \markup { \teeny F }  e2 |
+        \mark \markup { \teeny B } e8[( f8)] c8[( b8)]  \mark \markup { \teeny G } d2\prall |
+        % ende der ersten reihe
 
-      d8[(\mark \markup { \teeny AS }  e8)] c8[( b8)] \mark \markup { \teeny I } c4. b8 |
-      g2 r8 g8 c8[( d8)] |
-      e4.( d8) e2 |
-      e8[( f8)] d8[( c8)] d2\prall 
-      % ende der zweiten reihe
+        d8[(\mark \markup { \teeny AS }  e8)] c8[( b8)] \mark \markup { \teeny I } c4. b8 |
+        g2 r8 g8 c8[( d8)] |
+        e4.( d8) e2 |
+        e8[( f8)] d8[( c8)] d2\prall
+        % ende der zweiten reihe
 
-      d8[(e8)] c8[( b8)] c4. b8 |
-      c2 r8 d,\downbow e[(b')] |
-      c4.( c8) c8( d8) b[( a)]
-       % ende der dritten reihe
- 
-      b2\prall r8 d, e[( g)]
-      a4.( a8) a8[( b8)] g8[( f8)]
-      g2 r8 d8 e[( b')]
-       % ende der vierten reihe
+        d8[(e8)] c8[( b8)] c4. b8 |
+        c2 r8 d,\downbow e[(b')] |
+        c4.( c8) c8( d8) b[( a)]
+        % ende der dritten reihe
 
-      % http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes
-      % tenuto => -- => strich über notenkpf / Artikulationszeichen
-      c4.(c8--) c[( d)] b[( a)] |
-      b2 b8[( c)] a[( g)] |
-      a4.( a8--) a8[( b)] g8[( f)]
-       % ende der fünften reihe
+        b2\prall r8 d, e[( g)]
+        a4.( a8) a8[( b8)] g8[( f8)]
+        g2 r8 d8 e[( b')]
+        % ende der vierten reihe
 
-      g2 r8 g8 c[( d)] |
-      e4.( d8) e2 |
-      e8[(f )] d[( c)] d2\prall
-      % ende der sechsten reihe
+        % http://lilypond.org/doc/v2.19/Documentation/notation/expressive-marks-attached-to-notes
+        % tenuto => -- => strich über notenkpf / Artikulationszeichen
+        c4.(c8--) c[( d)] b[( a)] |
+        b2 b8[( c)] a[( g)] |
+        a4.( a8--) a8[( b)] g8[( f)]
+        % ende der fünften reihe
 
-      d8[(e)] c[(b)] c4. b8 |
-      g2 r8 g,8 c8[( d)]
-      e4.( d8) e2 |
-      e8[( f)] d[( c)] e2\prall | % "Prall" unter dem Notenkopf möglich?
-      % ende der siebenten reihe
+        g2 r8 g8 c[( d)] |
+        e4.( d8) e2 |
+        e8[(f )] d[( c)] d2\prall
+        % ende der sechsten reihe
 
-      d8[( e)] c[( b)] c4. b8 \upbow |
-      c2 \downbow r2 \bar "||"  |
-      R1*7 
+        d8[(e)] c[(b)] c4. b8 |
+        g2 r8 g,8 c8[( d)]
+        e4.( d8) e2 |
+        e8[( f)] d[( c)] e2\prall | % "Prall" unter dem Notenkopf möglich?
+        % ende der siebenten reihe
+
+        d8[( e)] c[( b)] c4. b8 \upbow |
+        c2 \downbow r2 \bar "||"  |
+        R1*7
 
     }
 }

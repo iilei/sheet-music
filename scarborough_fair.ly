@@ -14,6 +14,14 @@
 
 \paper {
     #(set-paper-size "a5")
+    #(define fonts
+         (set-global-fonts
+          #:music "emmentaler"
+          #:brace "emmentaler"
+          #:roman "TeXGyre Schola"
+          #:sans "TeXGyre Heros"
+          #:factor (/ staff-height pt 20)
+          ))
 }
 
 \score {
