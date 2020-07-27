@@ -33,7 +33,8 @@
         \set Staff.instrumentName = #"Violin 1"
         \time 3/4
         \numericTimeSignature
-        \tempo "Andante"
+
+        \tempo "Lento" 3 = 40
 
         a,2 \mark \markup { \teeny "a moll" } a4 |
         e'2 e4 |
@@ -93,7 +94,7 @@
         b a g |
         \stemNeutral
 
-        a2. \bar "||"
+        a2. \bar "|."
 
     }
 }

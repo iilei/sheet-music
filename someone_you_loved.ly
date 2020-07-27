@@ -54,7 +54,6 @@ violin = \relative c' {
     \override MultiMeasureRest.expand-limit = #1
     \omit Accidental
 
-    % Music follows here.
     R1*4 | r8  \mark \markup { \small \italic lacrimoso } a' \mp \upbow
     a[( f)]
     a( f) a( f)
@@ -101,23 +100,23 @@ violin = \relative c' {
     f8 d) d d g4 f~( f8 d) d d g g f( e~ | e4) \scoop f8^\markup { \italic pesante }-> \f f f-^f f-^f | f->( e)  e( d) d( e) e e~(
 
     \break
-    e d) d d
+    e d) d d f8->( g) f4~( \> f4 d8 \! \f) d f->( g f4~ \> f8 e) d d \! \mf  a' a f4~( \> f8 d) \! \< d d g4-> \! \mf e~(
 
+    \break
+    e8 d) d-> d g-> g-> f( e~ e4 \scoop f8->) f f f f f  | f->( \prall e) e( d) d( e) e e~( e d) d d f4 f~(\>
 
-
-
+    \break
+    f8 d) \! \mp d d g \mf g f( e~ | e4) \scoop f8 \< f f f f f \! | f[( \>  \grace{ g16 f} e8) e( d)] d( e) e e~( | e d4.) \p \! r2 | r1  \bar "|."
 
 }
 
 \score {
     \new Staff \with {
-
         midiInstrument = "violin"
-
     } \violin
 
     \layout { }
-    % \midi { }
+    \midi { }
 }
 
 
