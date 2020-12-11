@@ -61,27 +61,30 @@ violin = \relative c'' {
   a'4 b4 g4. c,8( |
   b'4) a4 g4  f4 |
 
-  e2. r8 a,8( \upbow |
+  e2. r8 a,8(  \downbow  |
   \set Score.repeatCommands = #'(end-repeat)
   \break
 
-  e'[ f]) d2 f4 |
-  f8[e] s8  a,4. s8 a8 \upbow |
+  e'[ f]) d2 \upbow f4 |
+  f8[e] s8  a,4. s8 a8( \downbow |
 
-  e'[f] d2 f4 |
-  f4 e2 a,4( |
+  e'[f]) d2 f4 |
+  f4 e2 a,4(\upbow  |
 
   e'8[ f8]) d2 a'4 |
   a( g) d4. e8( |
   f4.) d8 e4. c8 |
-  d2. a4( |
+  d2. a4( \upbow |
 
   e'8[ f8]) d2 a'4 |
   a4( g) d4. e8 \downbow |
 
-  f4. \upbow d8 \upbow a'8[( g8)] e8[( f8)] |
+  f4. \upbow d8 \upbow a'8[(  \downbow g8)] e8[(\upbow f8)] |
 
-  d1
+  d2(\downbow
+  d4.) r8
+
+
   \bar "|."
 
 }
