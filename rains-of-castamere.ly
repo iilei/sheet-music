@@ -70,7 +70,7 @@ violin = \relative c'' {
   \break
 
   e'[ \downbow f]) d2  f4 |
-  f8[(e)] s8  a,4. s8 a8( \downbow |
+  f8[e] s8  a,4. s8 a8( \downbow |
 
   e'[f]) d2 f4 |
   f4( e2) a,4(\downbow  |
