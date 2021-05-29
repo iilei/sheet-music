@@ -80,8 +80,8 @@ violin = \relative c'' {
 
 
 
-  a( g) d4. e8( \downbow |
-  f4. \upbow ) d8 \upbow  e4. \downbow c8 \downbow |
+  a( g) d4. e8 \downbow |
+  f4. \upbow d8 \upbow  e4. \downbow c8 \downbow |
   d2. \upbow a4( \downbow |
   e'8[ f8]) d2 a'4 |
 
