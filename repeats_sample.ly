@@ -1,4 +1,4 @@
-\version "2.19.15"
+\version "2.23.2"
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COPY ALL THIS BELOW %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % repeatBracket snippet
@@ -137,7 +137,7 @@
 }
 
 repeatBracket = #(define-music-function
-     (parser location N note)
+     (N note)
      (number? ly:music?)     
       #{        
         \override Staff.MeasureCounter.stencil = 

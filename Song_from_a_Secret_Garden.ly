@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.23.2"
 % https://www.hacklily.org/?edit=iilei/sheet-music/Song_from_a_Secret_Garden.ly
 
 \header {
@@ -34,7 +34,7 @@ global = {
                                      ((0 . 9) . ,FLAT)
                                      ((0 . 5) . ,FLAT)
                                      )
-        \compressFullBarRests
+        \compressEmptyMeasures
         \numericTimeSignature
         \override MultiMeasureRest.expand-limit = #2
         \override MultiMeasureRest.staff-position = #2

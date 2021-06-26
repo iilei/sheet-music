@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.23.2"
 
 
 \header {
@@ -7,7 +7,7 @@
     tagline = \markup {
         Engraved at
         \simple #(strftime "%Y-%m-%d" (localtime (current-time)))
-        with \with-url #"http://lilypond.org/"
+        with \with-url "http://lilypond.org/"
         \line { LilyPond \simple #(lilypond-version) (http://lilypond.org/) }
     }
 }
