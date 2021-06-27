@@ -49,6 +49,7 @@ violin = \relative c' {
   \key d \major
   \numericTimeSignature
   \compressEmptyMeasures
+  \override Score.MetronomeMark.padding = #8
   \tempo \markup { \italic"Moderato molto espressivo" } 4 = 108
   \override Score.RehearsalMark.self-alignment-X = #LEFT
   \override MultiMeasureRest.expand-limit = #1
