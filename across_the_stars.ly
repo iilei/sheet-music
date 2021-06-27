@@ -14,7 +14,6 @@
   }
 }
 
-
 \paper {
   #(set-paper-size "a4")
   #(define fonts
@@ -26,7 +25,6 @@
       #:factor (/ staff-height pt 20)
       ))
 }
-
 
 \relative c'' {
   \key g \major
@@ -42,8 +40,10 @@
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
   \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
 
+  \override BreathingSign.Y-offset = #3
+  \override BreathingSign.text =
+  \markup { \musicglyph "scripts.rcomma" }
   % Music follows here.
-
 
   R1*3 | r2 r4 \mark \markup { \small \italic legato } b, \p \upbow \bar "||"
 
@@ -51,9 +51,10 @@
 
   % https://lilypond.org/doc/v2.19/Documentation/notation/bars.de.html#index-BarNumber-1
   % \override Score.BarNumber.break-visibility = ##(#t)
-
+  \override Score.BarNumber.break-visibility = false
   \time 3/4
   \tuplet 3/2 { a8(g fis) } g4 e |
-  \tuplet 3/2 { g8( fis e) } fis4                                                                                                      d
+  \tuplet 3/2 { g8( fis e) } fis4 d \break
 
+  e2 d4 | b2 b4 | g'2 \breathe e4 | \tuplet 3/2 { e8( fis g } a4) fis4 | b4 a2 | b b4 \upbow \bar "||"
 }
