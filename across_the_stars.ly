@@ -17,7 +17,16 @@
 
 \paper {
   #(set-paper-size "a4")
+  #(define fonts
+     (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "TeXGyre Schola"
+      #:sans "TeXGyre Heros"
+      #:factor (/ staff-height pt 20)
+      ))
 }
+
 
 \relative c'' {
   \key g \major
@@ -32,14 +41,14 @@
   % Draw a box round the following bar number(s)
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 5)
   \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
-  
+
   % Music follows here.
 
 
-  R1*3 | r2 r4 \mark \markup { \small \italic legato } b, \p \upbow \bar "||" 
-  
+  R1*3 | r2 r4 \mark \markup { \small \italic legato } b, \p \upbow \bar "||"
+
   g'2. e4
-  
+
   % https://lilypond.org/doc/v2.19/Documentation/notation/bars.de.html#index-BarNumber-1
   % \override Score.BarNumber.break-visibility = ##(#t)
 
