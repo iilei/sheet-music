@@ -15,6 +15,8 @@
 }
 
 \paper {
+  system-system-spacing.basic-distance = #14
+
   #(set-paper-size "a4")
   #(define fonts
      (set-global-fonts
@@ -51,16 +53,29 @@
   \tuplet 3/2 { g8( fis e) } fis4 d \break
 
 
-  e2 d4 | b2 b4 | g'2 \breathe e4 | \tuplet 3/2 { e8( fis g } a4) fis4 | b4 a2 | b b4 \upbow \bar "||"
+  e2 d4 | b2 b4 | g'2 \breathe e4 | \tuplet 3/2 { e8( fis g } a4) fis4 | b4 a2 | b b4\upbow \bar "||"
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 14)
   \break
 
   d4. c8 b[ a] |  \tuplet 3/2 { a8( b c) } c4 a | d4. c8 b[( a)] |  gis\<[ b] e4 e,\! |
   \break
 
+  \set Score.barNumberVisibility = #(every-nth-bar-number-visible 22)
   g4. \mp f8 e[( d)] | \tuplet 3/2 { d e f} f4  d | g4. f8 e([ d]) | cis[ e] a2 \bar "||" \key f \major
   \break
 
-  R1*3/4*3 r4 r4 a4\mf \upbow \bar "||" f'2 d4 | \tuplet 3/2 { g8([ f e ]) } f4 d |
+  R1*3/4*3 r4 r4 a4\mf \upbow \bar "||" f'2 d4 | \tuplet 3/2 { g8( f e ) } f4 d | \tuplet 3/2 { f8( e d)  } e4 c
   \break
+
+  d2 c4 | a2 a4 | f'2 c4 | \tuplet 3/2 { d8([ e f]) } g4 e | a g2 | a d,4\upbow \bar "||"
+  \break
+
+  \set Score.barNumberVisibility = #(every-nth-bar-number-visible 35)
+
+  g4. f8 e([ d]) | \tuplet 3/2 { d( e f) } f4 d | g4. f8 e([ d]) | cis[ e] a4 a,\upbow
+
+  \break
+  % \pageTurn
+
+  c4. bes8 a[( g)] | % tuplet ...
 }
