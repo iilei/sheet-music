@@ -50,6 +50,7 @@
   \tuplet 3/2 { a8(g fis) } g4 e |
   \tuplet 3/2 { g8( fis e) } fis4 d \break
 
+
   e2 d4 | b2 b4 | g'2 \breathe e4 | \tuplet 3/2 { e8( fis g } a4) fis4 | b4 a2 | b b4 \upbow \bar "||"
   \set Score.barNumberVisibility = #(every-nth-bar-number-visible 14)
   \break
@@ -57,5 +58,9 @@
   d4. c8 b[ a] |  \tuplet 3/2 { a8( b c) } c4 a | d4. c8 b[( a)] |  gis\<[ b] e4 e,\! |
   \break
 
+  g4. \mp f8 e[( d)] | \tuplet 3/2 { d e f} f4  d | g4. f8 e([ d]) | cis[ e] a2 \bar "||" \key f \major
+  \break
 
+  R1*3/4*3 r4 r4 a4\mf \upbow \bar "||" f'2 d4 | \tuplet 3/2 { g8([ f e ]) } f4 d |
+  \break
 }
