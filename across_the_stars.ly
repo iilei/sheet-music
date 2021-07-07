@@ -1,16 +1,19 @@
 \version "2.23.2"
-% v2.20
 
 \header {
   title = "Across the Stars"
-  subtitle = "Love Theme from STAR WARS®: Episode II"
-  composer = "John Williams"
+  subtitle = \markup \small { "Love Theme from STAR WARS®: Episode II" }
+  composer = \markup \small { "John Williams" }
   copyright =  \markup \tiny { 2002 Bantha Music (BMI) }
-  tagline = ##f
+  tagline = \markup \tiny {
+    Engraved at
+    \simple #(strftime "%h %-d, %Y" (localtime (current-time)))
+    with \with-url "http://lilypond.org/"
+    \line { LilyPond }
+  }
 }
 
 \paper {
-
   #(set-paper-size "a5")
   #(define fonts
      (set-global-fonts
@@ -26,18 +29,15 @@
     \key g \major
     \numericTimeSignature
     \compressEmptyMeasures
-    % \set Score.extraNatural = ##f % - todo - compare effect
-    % \set Staff.printKeyCancellation = ##f
     \override MultiMeasureRest.expand-limit = #1
     \override Score.MetronomeMark.padding = #5
-    \tempo \markup { \italic"Moderately slow & gently" } 4 = 76
+    \tempo \markup \small { \italic"Moderately slow & gently" } 4 = 76
     \time 4/4
-    % Prevent bar numbers at the end of a line and permit them elsewhere
     \override Score.BarNumber.stencil = #(make-stencil-boxer 0.1 0.25 ly:text-interface::print)
     \override BreathingSign.Y-offset = #3
     \override BreathingSign.text =
     \markup { \musicglyph "scripts.rcomma" }
-    % Music follows here.
+
 
     R1*3 | r2 r4 \mark \markup { \small \italic legato } b, \p \upbow \bar "||"
     \override Score.BarNumber.break-visibility = ##(#f #t #f)
@@ -73,8 +73,9 @@
     g4. f8 e([ d]) | \tuplet 3/2 { d( e f) } f4 d | g4. f8 e([ d]) | cis[ e] a4 a,\upbow
 
     \break
+    \pageTurn
 
-    c4. bes8 a[( g)] | \tuplet 3/2 { g( a bes) } bes4 g | c4. bes8 a[( g)] | fis8[ a] d4\< d\upbow \!
+    c4. bes8 a[( g)] | \tuplet 3/2 { g( a bes) } bes4 g | c4. bes8 a[( g)] | fis8[ a] d4\< d-1 \upbow \!
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 43)
@@ -82,13 +83,13 @@
     bes'2 \f g4  \tuplet 3/2 { c8( bes a)} bes4 a-2 | \tuplet 3/2 { bes8( a g)} a4 f | g2 f4
     \break
 
-    d2 d4-1 | bes'2 a4 | \tuplet 3/2 { g8( a bes)} c4  a | d c2 | d \> d,4\upbow \! |
+    d2 d4-1 | bes'2 a4 | \tuplet 3/2 { g8( a bes)} c4  a | d c2 | d \> d,4-3 \upbow \! |
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 52)
 
     \time 4/4
-    ees4(\mf d) d-3( f,) | d'4( c) c( ees,) | b'-2( bes-1)  bes( <<
+    ees4-4(\mf d) d-3( f,) | d'4( c) c( ees,) | b'-2( bes-1)  bes( <<
       cis)\stemUp \new CueVoice {
         \shiftOn
         \once \override Score.FootnoteItem.annotation-line = ##f
@@ -122,7 +123,7 @@
     \tuplet 3/2 { bes8( a g) } a4 f | g2 f4 | d2 d4 | bes'2 g4 |
 
     \break
-    \tuplet 3/2 { g8( a bes) } c4 a | g4 bes2 | fis4-2 d'2-3 | g,2. | r4 r4 d4 \upbow
+    \tuplet 3/2 { g8( a bes) } c4 a | g4 bes2 | fis4-2 d'2-3 | g,2.-3 | r4 r4 d4 \upbow
 
     \break
     bes'2 g4 | \tuplet 3/2 { c8( bes a) } bes4 g |
