@@ -32,19 +32,19 @@
     \compressEmptyMeasures
     \override MultiMeasureRest.expand-limit = #1
     \override Score.MetronomeMark.padding = #5
-    \override Score.BarNumber.break-visibility = ##(#f #f #f)
+    % \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \tempo \markup { \italic"moderato" } 4 = 104
     \time 4/4
-    s4 s2 d'4 \upbow \bar "|" g4. \downbow fis8 g4 b | a4. g8 a4 b8[ a] | \stemUp g2 b4  d \stemNeutral | e2. e4 |
+    s4 s2 d'4 \upbow \bar "|" g4. \downbow fis8 g4 b | a4. g8 a4 b8([ a]) | \stemUp g2 b4  d \stemNeutral | e2. e4 |
     \break
 
-    c4. b8 \stemUp b4 fis | a4. g8 a4 b8[ a] | fis4. e8 e4 d | g2. \stemNeutral e'4 |
+    c4. b8 \stemUp b4 g | a4. g8 a4 b8([ a]) | g4. e8 e4 d | g2. \stemNeutral e'4 |
     \break
 
-    d4. b8 \stemUp b4 g | a4. g8 a4 \stemNeutral e'4 | d4. b8 b4 c | e2. g4 |
+    d4. b8 \stemUp b4 g | a4.-4 g8 a4-0 \stemNeutral e'4 | d4. b8 b4 d | e2. g4 |
     \break
 
-    d4. b8 b4 fis4 | a4. fis8 a4 b8[ a] | g4.e8 e4 d | g2. \bar "||"
+    d4. b8 b4 g4 | a4.-4 g8 a4-0 b8[ a] | g4.e8 e4 d | g2. \bar "||"
 
   }
 
