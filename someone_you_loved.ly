@@ -17,7 +17,7 @@
 }
 
 \paper {
-  #(set-paper-size "a4")
+  #(set-paper-size "a5")
   #(define fonts
      (set-global-fonts
       #:music "emmentaler"
