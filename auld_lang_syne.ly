@@ -38,10 +38,10 @@
     s4 s2 d'4 \upbow \bar "|" g4. \downbow fis8 g4 b | a4.-0 g8 a4 b8([ a]) | \stemUp g2 b4  d-3 \stemNeutral | e2.-4 e4 |
     \break
 
-    d4. b8 \stemUp b4 g \stemNeutral | a4. g8 a4 b8([ a]) | g4. e8 e4 d | g2. e'4 |
+    d4. b8 \stemUp b4 g \stemNeutral | a4.-4 g8 a4-0 b8([ a]) | g4. e8 e4 d | g2. e'4 |
     \break
 
-    d4. b8 \stemUp b4 g \stemNeutral | a4.-4 g8 a4-0 e'4 | d4. b8 b4 d | e2. g4 |
+    d4. b8 \stemUp b4 g \stemNeutral | a4.-4 g8 a4-0 e'4 | d4. b8  \stemUp  b4 \stemNeutral  d | e2. g4 |
     \break
 
     d4. b8 \stemUp b4 g \stemNeutral | a4.-4 g8 a4-0 b8[ a] | g4.e8 e4 d | g2. \bar "||"
