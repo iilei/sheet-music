@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.3"
 
 \header {
   title = "Rains of Castamere"
@@ -13,44 +13,16 @@
 }
 
 
-\paper {
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      #:factor (/ staff-height pt 20)
-      ))
-  #(set-paper-size "a5")
-}
-
-
-\layout {
-  \context {
-    \Score
-  }
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-    \override Stem #'neutral-direction = #'()
-  }
-}
-
-global = {
+\score {
+  \new Voice \relative c'' \repeat volta 1 {
   \key d \minor
   \time 4/4
   \tempo "Andante moderato" 4=92
   \numericTimeSignature
-}
-
-violin = \relative c'' {
-  \global
-
   r8 \skip4 \skip2  a8( \downbow
   
 
-  \bar ".|:"  % |
+  \bar ".|:" 
   
   
 
@@ -96,11 +68,6 @@ violin = \relative c'' {
   \bar "|."
 
 }
-
-\score {
-  \new Staff \with {
-    instrumentName = "Violin"
-    midiInstrument = "violin"
-  } \violin
-  \layout { }
 }
+
+

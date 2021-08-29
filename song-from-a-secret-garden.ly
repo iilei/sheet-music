@@ -1,55 +1,22 @@
-\version "2.23.2"
-% https://www.hacklily.org/?edit=iilei/sheet-music/Song_from_a_Secret_Garden.ly
+\version "2.23.3"
 
 \header {
   title = "Song from a Secret Garden"
   composer = "Rolf Løvland"
-  copyright = "Many thanks to Viktoria von Kirschbaum for beginner-friendly modifications"
-  tagline =  "Contributions appreciated -> https://github.com/iilei/sheet-music"
-}
-
-\paper {
-  #(set-paper-size "a5")
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      ))
-}
-
-\layout {
-  \context {
-    \Score
-  }
-  \context {
-    \Voice
-    \consists "Melody_engraver"
-    \override Stem #'neutral-direction = #'()
-  }
-}
-
-global = {
-  \time 4/4
 }
 
 
 \score {
-  \new StaffGroup \relative a' {
+  \new Voice \relative a' {
+    \time 4/4
     \set Staff.instrumentName = #"Violin 1"
     \override Glissando.style = #'trill
 
-    % "b" Symbole auf Notenlinen => Ton wird eine halbe Note tiefer gespielt
-    \set Staff.keySignature = #`(((0 . 6) . ,FLAT)
-                                 ((0 . 9) . ,FLAT)
-                                 ((0 . 5) . ,FLAT)
-                                 )
     \compressEmptyMeasures
     \numericTimeSignature
     \override MultiMeasureRest.expand-limit = #2
     \override MultiMeasureRest.staff-position = #2
-    \omit Accidental  % omit natural marks (Auflösungszeichen) - alternativ: b8 -> bes8
+    \omit Accidental
 
     R1 |
     R1*3 |

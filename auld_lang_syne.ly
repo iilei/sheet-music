@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.3"
 
 \header {
   title = "Auld Lang Syne"
@@ -12,17 +12,6 @@
   }
 }
 
-\paper {
-  #(set-paper-size "a5")
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      #:factor (/ staff-height pt 22)
-      ))
-}
 \score {
   \new Voice \relative {
     \set Staff.printKeyCancellation = ##f
@@ -32,7 +21,6 @@
     \compressEmptyMeasures
     \override MultiMeasureRest.expand-limit = #1
     \override Score.MetronomeMark.padding = #5
-    % \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \tempo \markup { \italic"moderato" } 4 = 104
     \time 4/4
     s4 s2 d'4 \upbow \bar "|" g4. \downbow fis8 g4 b | a4.-0 g8 a4 b8([ a]) | \stemUp g2 b4  d-3 \stemNeutral | e2.-4 e4 |

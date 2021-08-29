@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.3"
 
 \include "./utils/scoop.ly"
 
@@ -16,37 +16,15 @@
   }
 }
 
-\paper {
-  #(set-paper-size "a5")
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      #:factor (/ staff-height pt 20)
-      ))
-}
-
-\layout {
-  \context {
-    \Score
-    % \remove "Bar_number_engraver"
-    \consists "Melody_engraver"
-  }
-}
-
-global = {
-  \key c \major
-  \time 4/4
-
-}
 
 dolce = \markup { \italic dolce }
 subitoP = \markup { \center-align \italic subito \dynamic p }
 
-violin = \relative c' {
-  \key d \major
+\score {
+
+  \new StaffGroup  \relative a \repeat volta 1 {
+  \key c \major
+  \time 4/4
   \numericTimeSignature
   \compressEmptyMeasures
   \override Score.MetronomeMark.padding = #8
@@ -111,13 +89,6 @@ violin = \relative c' {
 
 }
 
-\score {
-  \new Staff \with {
-    midiInstrument = "violin"
-  } \violin
-
-  \layout { }
-  \midi { }
 }
 
 

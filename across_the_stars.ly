@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.3"
 
 \header {
   title = "Across the Stars"
@@ -13,17 +13,7 @@
   }
 }
 
-\paper {
-  #(set-paper-size "a5")
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      #:factor (/ staff-height pt 22)
-      ))
-}
+
 \score {
   \new Voice \relative c'' {
     \key g \major

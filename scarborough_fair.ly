@@ -1,4 +1,4 @@
-\version "2.23.2"
+\version "2.23.3"
 
 
 \header {
@@ -12,29 +12,9 @@
   }
 }
 
-\paper {
-  #(set-paper-size "a5")
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:sans "TeXGyre Heros"
-      #:factor (/ staff-height pt 20)
-      ))
-}
-
-\layout {
-  \context {
-    \Score
-  }
-}
-
 
 \score {
-  % \midi {
-  %    \tempo 4 = 88
-  % }
+
   \new StaffGroup \relative a' \repeat volta 1 {
 
     \set Staff.instrumentName = #"Violin 1"
