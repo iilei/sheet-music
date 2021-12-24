@@ -55,7 +55,7 @@
     R1*3/4*3 r4 r4 a4\mf \upbow \bar "||" f'2 d4 | \tuplet 3/2 { g8( f e ) } f4 d | \tuplet 3/2 { f8( e d)  } e4 c
     \break
 
-    d2 c4 | a2 a4 | f'2 c4 | \tuplet 3/2 { d8([ e f]) } g4 e | a g2 | a d,4\upbow \bar "||"
+    d2 c4 | a2 a4 | f'2 d4 | \tuplet 3/2 { d8([ e f]) } g4 e | a g2 | a d,4\upbow \bar "||"
     \break
 
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 35)
