@@ -70,10 +70,10 @@
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 43)
     \mark \markup { \small \bold Appassionato }
-    bes'2 \f g4  \tuplet 3/2 { c8( bes a)} bes4 a-2 | \tuplet 3/2 { bes8( a g)} a4 f | g2 f4
+    bes'2-2 \f g4-4  \tuplet 3/2 { c8-3( bes-2 a-1)} bes4-2 g-2 | \tuplet 3/2 { bes8-4( a-3 g-2)} a4-3 f-1 | g2-2 f4-1
     \break
 
-    d2 d4-1 | bes'2 a4 | \tuplet 3/2 { g8( a bes)} c4  a | d c2 | d \> d,4-3 \upbow \! |
+    d2-3 d4-1 | bes'2-2 g4-4 | \tuplet 3/2 { g8( a bes)} c4  a | d c2 | d \> d,4-3 \upbow \! |
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 52)
