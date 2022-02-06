@@ -12,6 +12,9 @@
     \line { LilyPond }
   }
 }
+\paper {
+  #(set-paper-size "A5")
+}
 
 
 \score {
