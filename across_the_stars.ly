@@ -65,7 +65,7 @@
     \break
     \pageTurn
 
-    c4. bes8 a[( g)] | \tuplet 3/2 { g( a bes) } bes4 g | c4. bes8 a[( g)] | fis8[ a] d4\< d-1 \upbow \!
+    c4.-4 bes8-3 a-2[( g-1)] | \tuplet 3/2 { g( a bes) } bes4-3 g-1 | c4.-4 bes8-3 a-2[( g-1)] | fis8-4[ a-2] d4-1\< d-1 \upbow \!
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 43)
@@ -73,7 +73,7 @@
     bes'2-2 \f g4-4  \tuplet 3/2 { c8-3( bes-2 a-1)} bes4-2 g-2 | \tuplet 3/2 { bes8-4( a-3 g-2)} a4-3 f-1 | g2-2 f4-1
     \break
 
-    d2-3 d4-1 | bes'2-2 g4-4 | \tuplet 3/2 { g8( a bes)} c4  a | d c2 | d \> d,4-3 \upbow \! |
+    d2-3 d4-1 | bes'2-2 g4-4 | \tuplet 3/2 { g8-4( a-1 bes-2)} c4-3  a-1 | d-4 c2-3 | d-4 \> d,4-3 \upbow \! |
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 52)
