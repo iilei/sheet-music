@@ -12,9 +12,8 @@
     \line { LilyPond }
   }
 }
-\paper {
-  #(set-paper-size "A5")
-}
+
+#(set-default-paper-size "a5")
 
 
 \score {
@@ -85,7 +84,7 @@
     ees4-4(\mf d) d-3( f,) | d'4( c) c( ees,) | b'-2( bes-1)  bes( <<
       cis)\stemUp \new CueVoice {
         \shiftOn
-        \once \override Score.FootnoteItem.annotation-line = ##f
+        % \once \override Score.FootnoteItem.annotation-line = ##f
         \stemUp cis,^\footnote "" #'(0.1 . 0.1)
         \markup { \super "*" \italic \tiny "The cue notes represent a more challenging performance alternative." }-"*"
       }
