@@ -55,17 +55,17 @@
     \break
 
     e'[ \downbow f]) d2  f4 |
-    f8([e]) s8  a,4. s8 a8( \downbow
+    f8( e) a,2 a4( \upbow
 
-    e'[f]) d2 f4
-    f4( e2) a,4(\downbow
+    e'8[f]) d2 f4
+    f4( e2) a,4(
 
     e'8[ f8]) d2 a'4
     \break
 
 
 
-    a( g) d4. e8 \downbow
+    a( g) d4.  e8 \downbow
     f4. \upbow d8 \upbow  e4. \downbow c8 \downbow
     d2. \upbow a4( \downbow
     e'8[ f8]) d2 a'4
