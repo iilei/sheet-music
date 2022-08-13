@@ -1,4 +1,4 @@
-\version "2.23.3"
+\version "2.23.11"
 
 \header {
   title = "Hallelujah"
@@ -30,10 +30,10 @@
 
     \tempo "Andante" 4=84
     \numericTimeSignature
-    s8 s2 fis8
+    s8 s2 fis8 \upbow
     a4 a8 a4 a8
 
-    b8[ \stemUp b b(] b4) fis8 \break
+    b8[ \stemUp b b(] b4) fis8 \upbow  \break
 
     a4 a8 a4 a8 b8[ b b(] b4) a8 b4 b b8[ b]  \break
 
@@ -55,3 +55,16 @@
 }
 
 
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.11  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
+2.23.9, 2.23.10, 2.23.11
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.11  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung:     Das Dokument wurde nicht verändert.
+%}
