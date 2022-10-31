@@ -1,4 +1,4 @@
-\version "2.23.11"
+\version "2.23.14"
 
 \header {
   title = "Hallelujah"
@@ -67,4 +67,10 @@ Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
 %{
 convert-ly (GNU LilyPond) 2.23.11  convert-ly: »« wird verarbeitet...
 Anwenden der Umwandlung:     Das Dokument wurde nicht verändert.
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.12, 2.23.13, 2.23.14
 %}

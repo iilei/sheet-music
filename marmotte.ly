@@ -1,10 +1,12 @@
-\version "2.23.3"
+\version "2.23.14"
 
 \header {
-  composer = "Ludwig van Beethoven (1770-1827)"
+  title = "Marmotte "
+  composer = "Johann Wolfgang von Goethe (1749-1832)"
+  arranger = "Ludwig van Beethoven (1770-1827)"
   crossRefNumber = "1"
   footnotes = ""
-  title = "Marmotte — Johann Wolfgang von Goethe (1749-1832)"
+
   tagline = \markup \tiny  {
     Engraved at
     \simple #(strftime "%h %-d, %Y" (localtime (current-time)))
@@ -15,7 +17,17 @@
 
 \paper {
   footnote-separator-markup = \markup \null
+
+  #(define fonts
+     (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "TeXGyre Schola"
+      #:factor (/ staff-height pt 20)
+      ))
+  #(set-paper-size "a5")
 }
+
 
 LH = \markup { \sans \teeny \smallCaps "LH" }
 
@@ -34,7 +46,7 @@ LH = \markup { \sans \teeny \smallCaps "LH" }
     \time 6/8
 
     s2 \mf s8
-    \once \override Score.FootnoteItem.annotation-line = ##f
+    \once \override Score.Footnote.annotation-line = ##f
     e'8\upbow_""\footnote "" #'(0.0 . 0.0)
     \markup { \LH" – " \italic \smaller "Lower Half (Untere Bogenhälfte)" }-\LH |
     a4-0(\downbow a8-- \downbow)
@@ -86,4 +98,17 @@ MB = Middle of the Bow.
 LH = Lower Half ==> / Нижняя Половина / Untere Hälfe
 UH = Upper Half
 
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
+2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung:     Das Dokument wurde nicht verändert.
 %}

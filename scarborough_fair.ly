@@ -1,4 +1,4 @@
-\version "2.23.3"
+\version "2.23.14"
 
 
 \header {
@@ -12,6 +12,16 @@
   }
 }
 
+\paper {
+  #(define fonts
+     (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "TeXGyre Schola"
+      #:factor (/ staff-height pt 20)
+      ))
+  #(set-paper-size "a5")
+}
 
 \score {
 
@@ -85,3 +95,10 @@
 
   }
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
+2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14
+%}

@@ -1,10 +1,29 @@
-\version "2.23.3"
+\version "2.23.14"
 
 \header {
   title = "Song from a Secret Garden"
   composer = "Rolf Løvland"
+  tagline = \markup {
+    Engraved at
+    \simple #(strftime "%Y-%m-%d" (localtime (current-time)))
+    with \with-url "http://lilypond.org/"
+    \line { LilyPond \simple #(lilypond-version) (http://lilypond.org/) }
+  }
 }
 
+\paper {
+  footnote-separator-markup = \markup \null
+
+  #(define fonts
+     (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "TeXGyre Schola"
+      #:factor (/ staff-height pt 20)
+      ))
+  #(set-paper-size "a5")
+
+}
 
 \score {
   \new Voice \relative a' {
@@ -60,3 +79,9 @@
 
   }
 }
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
+2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14
+%}

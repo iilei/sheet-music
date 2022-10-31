@@ -1,4 +1,4 @@
-\version "2.23.3"
+\version "2.23.14"
 
 \header {
   title = "Across the Stars"
@@ -13,7 +13,18 @@
   }
 }
 
-#(set-default-paper-size "a5")
+
+\paper {
+  #(define fonts
+     (set-global-fonts
+      #:music "emmentaler"
+      #:brace "emmentaler"
+      #:roman "TeXGyre Schola"
+      #:factor (/ staff-height pt 20)
+      ))
+  #(set-paper-size "a5")
+}
+
 
 
 \score {
@@ -84,7 +95,7 @@
     ees4-4(\mf d) d-3( f,) | d'4( c) c( ees,) | b'-2( bes-1)  bes( <<
       cis)\stemUp \new CueVoice {
         \shiftOn
-        % \once \override Score.FootnoteItem.annotation-line = ##f
+        % \once \override Score.Footnote.annotation-line = ##f
         \stemUp cis,^\footnote "" #'(0.1 . 0.1)
         \markup { \super "*" \italic \tiny "The cue notes represent a more challenging performance alternative." }-"*"
       }
@@ -127,3 +138,10 @@
   }
 
 }
+
+
+%{
+convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
+Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
+2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14
+%}
