@@ -16,10 +16,12 @@
       ))
   #(set-paper-size "a4")
 
+  left-margin = 30
+  right-margin = 15
+
 }
 
 \layout {
-  ragged-right = ##f
   ragged-right = ##f
 }
 
@@ -159,19 +161,19 @@ left = \relative c' {
 
 violinPart = \new Staff \with {
   instrumentName = "Violine"
-  shortInstrumentName = "Vio."
+  shortInstrumentName = "Violine^"
   midiInstrument = "violin"
 } \violin
 
 contrabassPart = \new Staff \with {
-  instrumentName = "Contrabass"
-  shortInstrumentName = "C.-bass"
+  instrumentName = "Kontrabass"
+  shortInstrumentName = "Bass"
   midiInstrument = "contrabass"
 } { \clef bass \contrabass }
 
 pianoPart = \new PianoStaff \with {
-  instrumentName = "Klavier"
-  shortInstrumentName = "Klav."
+  instrumentName = "Piano"
+  shortInstrumentName = "Piano"
 } <<
   \new Staff = "right" \with {
     midiInstrument = "acoustic grand"
