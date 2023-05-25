@@ -114,10 +114,10 @@ contrabass = \relative c {
 
   \barNumberCheck #3
 
-  d r r
-  d r r
+  g r r
+  c, r r
 
-  g r4 r4
+  g' r4 r4
   g r4 r4
 
   d r r
@@ -126,9 +126,9 @@ contrabass = \relative c {
   \barNumberCheck #9
   g r r
   d r r
-  d r r
   g r r
-  g r r
+  c, r r
+  g' r r
 
   \barNumberCheck #14
   g r r d r r d r r g r r g r r
@@ -137,7 +137,7 @@ contrabass = \relative c {
   f r r f r r bes  r r g r r d r r fis r r
   \barNumberCheck #25
 
-  g r r g r r f r r f r r f r r
+  g r r g r r f r r f r r g r r
   \barNumberCheck #30
 
   g r r d r r d r r g r r g, r r
@@ -254,9 +254,9 @@ pianoPart = \new PianoStaff \with {
 
 \score {
   <<
-    \violinPart
-    \pianoPart
-    \contrabassPart
+   \violinPart
+   \pianoPart
+   \contrabassPart
   >>
   \layout { }
   \midi { }
