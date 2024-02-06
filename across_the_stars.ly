@@ -1,4 +1,4 @@
-\version "2.23.14"
+\version "2.25.12"
 
 \header {
   title = "Across the Stars"
@@ -15,13 +15,8 @@
 
 
 \paper {
-  #(define fonts
-     (set-global-fonts
-      #:music "emmentaler"
-      #:brace "emmentaler"
-      #:roman "TeXGyre Schola"
-      #:factor (/ staff-height pt 20)
-      ))
+  property-defaults.fonts.music = "emmentaler"
+  property-defaults.fonts.serif = "TeXGyre Schola"
   #(set-paper-size "a5")
 }
 
@@ -57,7 +52,7 @@
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 14)
     \break
 
-    d4. c8 b[ a] |  \tuplet 3/2 { a8( b c) } c4 a | d4. c8 b[( a)] |  gis\<[ b] e4 e,\! |
+    d4. c8 b([ a]) |  \tuplet 3/2 { a8( b c } c4) a | d4. c8 b[( a)] |  gis\<[ b] e4 \upbow e,\! \upbow |
     \break
 
 
@@ -83,10 +78,26 @@
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 43)
     \mark \markup { \small \bold Appassionato }
-    bes'2-2 \f g4-4  \tuplet 3/2 { c8-3( bes-2 a-1)} bes4-2 g-2 | \tuplet 3/2 { bes8-4( a-3 g-2)} a4-3 f-1 | g2-2 f4-1
+    bes'2-2 \f g4-4  \tuplet 3/2 { c8-3( bes-2 a-1)}
+
+    \shape #'(
+               (0.6 . -0.2) (-0.2 . -1.5)
+               (-0.8 . -1.8) (-1.2  . -1.2)
+               ) Slur
+
+    bes4-2 ( g-2 )
+
+    | \tuplet 3/2 { bes8-4( a-3 g-2)} a4-3 f-1 | g2-2 f4-1
+
     \break
 
-    d2-3 d4-1 | bes'2-2 g4-4 | \tuplet 3/2 { g8-4( a-1 bes-2)} c4-3  a-1 | d-4 c2-3 | d-4 \> d,4-3 \upbow \! |
+    \shape #'((0 . -2) (0  . -2)
+                       (-0.1 . -1.5) (-.5 . .1)) Slur
+
+    d2-3(
+    d4-1)  | bes'2-2 g4-4 | \tuplet 3/2 { g8-4( a-1 bes-2)} c4-3  a-1 | d-4 c2-3 | d-4 \> d,4-3 \upbow \! |
+
+
 
     \break
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 52)
@@ -144,4 +155,11 @@
 convert-ly (GNU LilyPond) 2.23.14  convert-ly: »« wird verarbeitet...
 Anwenden der Umwandlung: 2.23.4, 2.23.5, 2.23.6, 2.23.7, 2.23.8,
 2.23.9, 2.23.10, 2.23.11, 2.23.12, 2.23.13, 2.23.14
+%}
+
+
+%{
+convert-ly (GNU LilyPond) 2.25.12  convert-ly: Processing `'...
+Applying conversion: 2.24.0, 2.25.0, 2.25.1, 2.25.3, 2.25.4, 2.25.5,
+2.25.6, 2.25.8, 2.25.9, 2.25.11, 2.25.12
 %}
