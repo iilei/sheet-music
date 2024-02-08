@@ -56,14 +56,14 @@
     \break
 
 
-    g4. \mp f8 e[( d)] | \tuplet 3/2 { d e f} f4  d | g4. f8 e([ d]) | cis[ e] a2 \bar "||" \key f \major
+    g4. \mp f8 e[( d)] | \tuplet 3/2 { d( e f)} f4  d | g4. f8 e([ d]) | cis[ e] a2 \bar "||" \key f \major
     \break
 
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 22)
     R1*3/4*3 r4 r4 a4-2\mf \upbow \bar "||" f'2-3 d4-1 | \tuplet 3/2 { g8-4( f-3 e-2 ) } f4-3 d-1 | \tuplet 3/2 { f8-3( e-2 d-1)  } e4-2 c-4
     \break
 
-    d2 c4 | a2 a4 | f'2 d4 | \tuplet 3/2 { d8([ e f]) } g4 e | a g2 | a d,4\upbow \bar "||"
+    d2 c4 | a2 a4 | f'2 d4 | \tuplet 3/2 { d8([ e f] } g4) e | a g2 | a d,4\upbow \bar "||"
     \break
 
     \set Score.barNumberVisibility = #(every-nth-bar-number-visible 35)
@@ -95,7 +95,11 @@
                          (-0.1 . -1.5) (-.5 . .1)) Slur
 
     d2-3(
-    d4-1)  | bes'2-2 g4-4 | \tuplet 3/2 { g8-4( a-1 bes-2)} c4-3  a-1 | d-4 c2-3 | d-4 \> d,4-3 \upbow \! |
+    d4-1)  |
+
+    e2-2 g4-4
+
+    | \tuplet 3/2 { g8-4( a-1 bes-2)} c4-3  a-1 | d-4 c2-3 | d-4 \> d,4-3 \upbow \! |
 
 
 
@@ -137,7 +141,12 @@
     \tuplet 3/2 { bes8( a g) } a4 f | g2 f4 | d2 d4 | bes'2 g4 |
 
     \break
-    \tuplet 3/2 { g8( a bes) } c4 a | g4 bes2 | fis4-2 d'2-3 | g,2.-3 | r4 r4 d4 \upbow
+    \tuplet 3/2 { g8( a bes) } c4 a | g4 bes2 |
+
+    \shape #'((-4 . 3) (-3  . 3)
+                       (-2 . 4) (-3 . 4)) Slur
+
+    fis4-2( d'2-3) | g,2.-3 | r4 r4 d4 \upbow
 
     \break
     bes'2 g4 | \tuplet 3/2 { c8( bes a) } bes4 g |
